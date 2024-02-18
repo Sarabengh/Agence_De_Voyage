@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agence de voyage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>les voyages forment la jeunesse</h1>
+    </header>
+    <main>
+      <section class="container">
+        <div  class="left">
+          <h2>Choisissez votre distination :</h2>
+          <img id="image" src="Images/france.jpg" width="300" />
+        </div>
+        <div  class="right">
+            <img src="Images/logo.png" width="100" alt="" />
+            <h2>Espace Réservation</h2>
+          <form action="">
+            <!-- win + . = emojis  -->
+            <table>
+              <tr>
+                <td>
+                  <label for="nom">Nom:</label>
+                </td>
+                <td>
+                  <input type="text" id="nom" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="prenom">Prénom:</label>
+                </td>
+                <td>
+                  <input type="text" id="prenom" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="tlphn">Telephone :</label>
+                </td>
+                <td>
+                  <input type="text" id="tlphn" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="dest">Destination</label>
+                </td>
+                <td>
+                  <!-- The change event is fired for , , and elements when a change to the element's value is committed by the user -->
+                  <select
+                    id="dest"
+                    name="distination"
+                    onchange="updateCountryImg()"
+                  >
+                    <!-- <option  value="Algérie">Algérie</option> -->
+                    <option value="France">France</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="tunisia">tunisia</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </form>
+          <button>Réserver</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p>CONTACT lili</p>
+        <p>Tél: (213) 555 555 555</p>
+        <p>ou</p>
+        <p>Tél: (213) 34 555 555</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
